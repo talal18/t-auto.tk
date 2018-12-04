@@ -3,6 +3,10 @@
 session_start();
 include("functions/functions.php");
 
+if(!isset($_SESSION['customer_email'])){
+	header('Location: ../customer_login.php');
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -55,6 +59,7 @@ include("functions/functions.php");
 		<!-- Content wrapper starts here -->
 		<div class="content_wrapper">
 
+			
 			
 			<div id="sidebar">
 
@@ -130,10 +135,10 @@ include("functions/functions.php");
 				
 				
 				<div id="products_box">
-
 					
-
+				
 					<?php
+                                                
 
 					if(!isset($_GET['my_orders'])){
 
@@ -178,8 +183,8 @@ include("functions/functions.php");
 
 					if(isset($_GET['delete_account'])){
 
-						include("delete_account.php");
 					}
+                                        
 
 					?>
 					

@@ -11,7 +11,7 @@ include("includes/db.php");
 		<table width="500" align="center" bgcolor="grey">
 			
 			<tr align="center">
-				<td colspan="4"><h2>Login or register to buy</h2></td>
+								<td colspan="4"><h2>Login or register to buy</h2></td>
 			</tr>
 
 			<tr>
